@@ -3,7 +3,7 @@
 
 Group 11 
 
-![Screenhot](images/happy.jpg)
+![Screenshot](images/happy.jpg)
 
 
 ## About
