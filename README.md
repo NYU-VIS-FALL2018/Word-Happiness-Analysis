@@ -16,6 +16,6 @@ decline in its happiness rank irrespective of a continued increase in GDP. In th
 the USA's happiness index irrespective of a steeadily thriving economy.
 
 ## More
-[DEMO](https://nyu-vis-fall2018.github.io/project-template/)
+[DEMO](https://nyu-vis-fall2018.github.io/Word-Happiness-Analysis/)
 
 [Project Descrioption](project.pdf)
