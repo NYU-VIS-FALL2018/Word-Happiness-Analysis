@@ -1,4 +1,4 @@
-# Project Name
+# World Happiness Analysis
 **Authors**: Khushnaseeb Ali (kk3521), Srinath Chandrashekar (sc6637), Mayank Grover (mg5229)
 
 Group 11 
