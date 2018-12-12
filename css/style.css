@@ -9,7 +9,7 @@ body, html
 
 body
 {
-  min-height: 500px;
+  min-height: 400px;
   background: #f5f5f5;
   text-align: center;
 }
@@ -20,8 +20,17 @@ section{
   height: 100%;
 }
 
+h1{
+  font-family: 'Open Sans', sans-serif;
+  /* background: red; */
+  color: #fff;
+  padding: 0 20px;
+  display:inline-block;
+}
+
 p{
   margin: 10px 0;
+  text-align: center;
 }
 
 
@@ -36,7 +45,7 @@ label
   background: #FFCD00;
   border: 0;
   color: #B57700;
-  padding: 15px;
+  /* padding: 15px; */
   min-width: 60px;
   font-size: 18px;
   font-weight: bold;
@@ -50,10 +59,10 @@ label
 {
   background: linear-gradient(135deg, rgb(255, 233, 25) 0%, rgb(251, 192, 0) 100%);
   border-radius: 100%;
-  padding: 25px;
+  padding: 15px;
   position: relative;
   width: 90px;
-  height: 90px;
+  height: 80px;
   left: 7%;
   top: 50%;
   transform: translateX(-50%) translateY(calc(-50% - 121px));
@@ -388,10 +397,11 @@ line {
 }
 .bar { fill: steelblue; }
 .graph{
-    height: 90%;
+    height: 85%;
     width: 80%;
     margin-top: 2%;
-    margin-left: 10%;
+    margin-left: 5%;
+
     border: 1px solid black;
 }
 h1 {
@@ -419,7 +429,7 @@ p{
 }
 .outerbox {
 	width: 100%;
-	height: 100%;
+	height: 50%;
 	overflow: scroll;
 	background: black;
 	white-space: nowrap;
@@ -428,7 +438,7 @@ p{
 .innerbox {
 	overflow: hidden;
 	width: 90%;
-	height: 30%;
+	height: 60%;
 	margin: 1%;
 	background: lightblue;
 	display: inline-block;
@@ -452,24 +462,70 @@ p{
 
 #happy-graph {
 	overflow: hidden;
-	width: 85%;
+	width: 98%;
 	height: 70%;
 	margin: 1%;
 	background: white;
 	/* display: none; */
 }
-
+#happy-controls{
+  overflow: hidden;
+	width: 98%;
+	height: 16%;
+	margin: 1%;
+	background: white;
+  display: none;
+}
+/* #graph1{
+  overflow: hidden;
+	width: 90%;
+	height: 50%;
+	margin: 1%;
+	background: white;
+}
+#graph2{
+  overflow: hidden;
+	width: 90%;
+	height: 50%;
+	margin: 1%;
+	background: white;
+} */
 
 #sad-graph {
 	overflow: hidden;
-	width: 85%;
+	width: 98%;
 	height: 70%;
 	margin: 1%;
 	background: white;
-	/* display: none; */
+	display: none;
+}
+#sad-controls{
+  overflow: hidden;
+	width: 98%;
+	height: 16%;
+	margin: 1%;
+	background: white;
+  display: none;
+}
+#graph-div{
+          width: 1100px;
+          height: 850px;
+        }
+#show-happy{
+        overflow: hidden;
+      	width: 102%;
+      	height: 68%;
+      	margin: 1%;
+      	background: white;
 }
 
-
+ #show-angry{
+        overflow: hidden;
+      	width: 102%;
+      	height: 68%;
+      	margin: 1%;
+      	background: white;
+}
 .axis .domain {
   display: none;
 }
@@ -482,16 +538,61 @@ background-color: #bbb;
 display: inline-block;
 }
 
+.line1 {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+  }
+
+  .line2 {
+    fill: none;
+    stroke: red;
+    stroke-width: 2px;
+  }
+
+  .grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+  }
+
+  .grid path {
+    stroke-width: 0;
+  }
+
+  .bar{
+      width: 80%;
+      height: 116%;
+      margin: 10%;
+      background: white;
+      position: relative;
+  }
+  .bar2{
+      width: 80%;
+      height: 56%;
+      margin: 10%;
+      background: white;
+      position: relative;
+  }
 
 
-.legend { list-style: none; }
-.legend li { float: left; margin-right: 10px; }
-.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* .bar:hover {
+    transform: scale(1.2);
+
+} */
+
+
+
+.legend { list-style: none; position: absolute;
+    left:0px;
+    top: 150px; }
+.legend li { float: left; margin-right: 10px;  }
+.legend span { border: 1px solid #ccc; float: left; width: 18px; height: 18px; margin: 2px; }
 /*["#b33040", "#d25c4d", "#f2b447", "#d9d574", "#19E593", "#0764f9", "#f90713"]*/
-.legend .dot_red { background-color: #0099ff; }
-.legend .dot_blue { background-color: #d580ff; }
-.legend .dot_green { background-color: #00e600; }
-.legend .dot_lightyellow { background-color: #4ddbff; }
-.legend .dot_yellow { background-color: #ffcc00; }
-.legend .dot_brown { background-color: #ff3300; }
-.legend .dot_maroon { background-color: #ff9900; }
+.legend .dot_red { background-color: #98abc5; }
+.legend .dot_blue { background-color: #8a89a6; }
+.legend .dot_green { background-color: #7b6888; }
+.legend .dot_lightyellow { background-color: #6b486b; }
+.legend .dot_yellow { background-color: #a05d56; }
+.legend .dot_brown { background-color: #d0743c; }
+.legend .dot_maroon { background-color: #ff8c00; }

@@ -9,27 +9,38 @@
 	<script type="text/javascript" src="js/graph1.js"></script>
 	<script type="text/javascript" src="js/graph2.js"></script>
   <script type="text/javascript" src="js/graph4.js"></script>
+  <script src ="js/Economy-usa.js"></script>
+    <script src ="js/Econony-cam.js"></script>
+    <script src ="js/Generousity.js"></script>
+    <script src ="js/drugabuse.js"></script>
+    <script src="js/rank.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>World Happiness Analysis</title>
 </head>
 
 <body>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<h1>World Happiness Analysis</h1>
+<h1>America's Declining Happiness - A social or an economic crisis?</h1>
+
 <div class="innerbox">
-	<h2>Project Goal</h2>
-	<p>Happiness Index Score measures the sustainable well-being for a country. It is an indication which tells us how well a nation is doing at achieving long, happy, sustainable lives. It is important to measure the happiness index scorebecause it is a better measure of a nation’s progress than individual measures like GDP, Life
+	<h2>What is Happiness Score?</h2>
+  <p style="width: 500px;">
+  Happiness Index Score measures the sustainable well-being for a country. It is an indication which tells us how well a nation is doing at achieving long, happy, sustainable lives. It is important to measure the happiness index scorebecause it is a better measure of a nation’s progress than individual measures like GDP, Life
 Expectancy etc. Happiness Index Score is calculated taking factors like GDP per Capita, Family happiness, Life Expectancy, Freedom, Generosity, Trust etc. Taking these factors into consideration,
-we are analyzing how the happiness index score of USA increases or decreases due to the abovefactors.</p>
-<p>Data Set can be found <a href="https://www.kaggle.com/unsdsn/world-happiness">here</a></p><br>
+we are analyzing how the happiness index score of USA increases or decreases due to the abovefactors.
+<br><br><br><br><br>
+Data Set can be found <a href="https://www.kaggle.com/unsdsn/world-happiness">here
+  </p>
+	<p><img src="sad-america.jpg" style="float:right;" align="right" width="400" height="400"/></p>
+<p></a></p><br>
 </div>
-<p>Click on the happy/sad smiley to see the top 10 happy/sad countries </p><br>
+<p>Click on the buttons to see the top 10 happy/sad countries </p><br>
 <input id="happy" type="radio" name="smiley" value="Happy">
-<label for="happy">:)</label>
+<label for="happy"> Top 10 happy Countries</label>
 <!-- <input id="normal" type="radio" name="smiley" value="Normal">
 <label for="normal">:|</label> -->
 <input id="angry" type="radio" name="smiley" value="Angry">
-<label for="angry">:(</label>
+<label for="angry">Bottom 10 happy Countries</label>
 
 <div class="smiley">
   <div class="eyes">
@@ -37,23 +48,47 @@ we are analyzing how the happiness index score of USA increases or decreases due
     <div class="eye"></div>
   </div>
   <div class="mouth"></div>
-</div>
+
+  </div>
+
+
 
 
 <!-- <svg width="1060" height="500"></svg> -->
 <div id='show-happy' style='display:none'>
-  <p>Top 10 Happiest Countires</p>
-</div>
-<div id = "happy-graph" style='display:none'>
-    <svg id="graph1" class="graph"></svg>
-</div>
+  <p>Happiest Countries</p>
 
-<div id='show-angry' style='display:none'>
-  <p>Top 10 Saddest Countries</p>
+<!-- <div id = "happy-graph" style='display:none'> -->
+    <svg id="graph1" class="graph"></svg>
+  </div>
+    <!-- <div id='graph-div'> -->
+    <!-- <svg class="graph"/> -->
+  <!-- </div> -->
+  <div id = "happy-controls" class="controls">
+    <!-- <div class="controls"></div> -->
+  </div>
+
+
+<!-- <div id='show-angry' style='display:none'>
+  <p>Saddest Countries</p>
 </div>
 <div id = "sad-graph" style='display:none'>
     <svg id="graph2" class="graph"></svg>
-</div>
+</div> -->
+
+<div id='show-angry' style='display:none'>
+  <p>Saddest Countries</p>
+
+<!-- <div id = "happy-graph" style='display:none'> -->
+    <svg id="graph2" class="graph"></svg>
+  </div>
+    <!-- <div id='graph-div'> -->
+    <!-- <svg class="graph"/> -->
+  <!-- </div> -->
+  <div id = "sad-controls" class="controls">
+    <!-- <div class="controls"></div> -->
+  </div>
+
 
 
 <!-- <div id='show-normal' style='display:none'>
@@ -65,8 +100,59 @@ we are analyzing how the happiness index score of USA increases or decreases due
   <div id='show-normal' style='display:none'>I am fine!</div>
   <div id='show-angry' style='display:none'>I am sad!</div> -->
 
+  <div class = "bar">
+      <!-- <p><b>Comparison of Rate of change of GDP VS change in Happiness Rank
+          for USA vs Cameron</p> -->
+          <p style="font-size:20px; color:black; font-weight:bold; ">
+    Comparison of Rate of change of GDP and Happiness for
+    <span style="color: #ff0000">Cameroon</span>
+    and
+    <span style="color: #1477B9">USA</span>
+    for years 2015-2017
+  </p>
+      <svg id="eco-usa" ></svg>
+      <svg id="eco-cam"></svg>
+      <br><br><br><br><br>
+      
+      <p style="font-size:20px; color:black
+      ; font-weight:bold;">Trends in World Giving (Generosity) Index rank for USA for the years 2014-2017</p>
+
+      <svg id="generous"></svg>
+      <p style="font-size:20px; color:#628AA5; font-weight:bold;">The United States has slipped down the rankings to fifth place,
+              its lowest ranking since 2011. A five percentage point decrease in the USA’s overall score is driven by
+              lower levels of donating money (down seven percentage points to 56%)
+              and volunteering time (down five percentage points to 41%).
+      </p>
+
+  </div>
 
 
+
+
+  <div class="bar2">
+    <p style="font-size:20px; color:black; font-weight:bold; ">
+Trends in Drug abuse Percentage
+<span style="color: #ff0000">Latin America</span>
+and
+<span style="color: #1477B9">USA</span>
+for years 2014-2016
+</p>
+          <svg id="drugabuse"></svg>
+          <svg id="happiness-rank"></svg>
+      </div>
+
+
+  <!-- <div class = "bar">
+      <p>Trends in World Giving (Generosity) Index rank for USA for the years 2014-2017</p>
+
+      <svg id="generous"></svg>
+      <p>The United States has slipped down the rankings to fifth place,
+              its lowest ranking since 2011. A five percentage point decrease in the USA’s overall score is driven by
+              lower levels of donating money (down seven percentage points to 56%)
+              and volunteering time (down five percentage points to 41%).
+      </p>
+
+</div> -->
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
