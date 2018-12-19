@@ -4,7 +4,7 @@
 Group 11 
 
 ![Screenshot](happy.jpg)
-
+![Screenshot](demo.jpeg)
 
 ## About
 For the second consecutive year in 2018, the United States has taken a notch
