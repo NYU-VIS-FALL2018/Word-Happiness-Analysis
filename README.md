@@ -18,4 +18,4 @@ the USA's happiness index irrespective of a steeadily thriving economy.
 ## More
 [DEMO](https://nyu-vis-fall2018.github.io/Word-Happiness-Analysis/)
 
-[Project Descrioption](project.pdf)
+[Project Description](project.pdf)
