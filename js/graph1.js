@@ -5,9 +5,9 @@ function createChart (svg, data) {
   const colors = ['#98abc5', '#8a89a6', '#7b6888', '#6b486b', '#a05d56', '#d0743c', '#ff8c00']
 
   svg = d3.select(svg)
-  const margin = {top: 20, right: 10, bottom: 30, left: 40}
+  const margin = {top: 20, right: 50, bottom: 30, left: 40}
   const width = 1000 - margin.left - margin.right
-  const height = 420 - margin.top - margin.bottom
+  const height = 470 - margin.top - margin.bottom
   const g = svg.append('g').attr('transform', 'translate(' + margin.left + ',' + margin.top + ')')
 
   var x0 = d3.scaleBand()
