@@ -14,6 +14,8 @@
     <script src ="js/Generousity.js"></script>
     <script src ="js/drugabuse.js"></script>
     <script src="js/rank.js"></script>
+    <script src="js/income.js"></script>
+    <script src = "js/corruption.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>World Happiness Analysis</title>
 </head>
@@ -27,18 +29,18 @@
   <p style="width: 500px;">
   Happiness Index Score measures the sustainable well-being for a country. It is an indication which tells us how well a nation is doing at achieving long, happy, sustainable lives. It is important to measure the happiness index scorebecause it is a better measure of a nation’s progress than individual measures like GDP, Life
 Expectancy etc. Happiness Index Score is calculated taking factors like GDP per Capita, Family happiness, Life Expectancy, Freedom, Generosity, Trust etc. Taking these factors into consideration,
-we are analyzing how the happiness index score of USA increases or decreases due to the abovefactors.
+we are analyzing how the happiness index score of USA increases or decreases due to the above factors.
 <br><br><br><br><br>
 Data Set can be found <a href="https://www.kaggle.com/unsdsn/world-happiness">here
   </p>
 	<p><img src="sad-america.jpg" style="float:right;" align="right" width="400" height="400"/></p>
 <p></a></p><br>
 </div>
-<p>Click on the buttons to see the top 10 happy/sad countries </p><br>
+<br><br><br><br>
+<p style="font-weight:bold; font-size:20px;">Click on the buttons on the right to see the top 10 happy/sad countries </p>
 <input id="happy" type="radio" name="smiley" value="Happy">
 <label for="happy"> Top 10 happy Countries</label>
-<!-- <input id="normal" type="radio" name="smiley" value="Normal">
-<label for="normal">:|</label> -->
+
 <input id="angry" type="radio" name="smiley" value="Angry">
 <label for="angry">Bottom 10 happy Countries</label>
 
@@ -51,108 +53,221 @@ Data Set can be found <a href="https://www.kaggle.com/unsdsn/world-happiness">he
 
   </div>
 
-
-
-
-<!-- <svg width="1060" height="500"></svg> -->
 <div id='show-happy' style='display:none'>
   <p>Happiest Countries</p>
 
-<!-- <div id = "happy-graph" style='display:none'> -->
     <svg id="graph1" class="graph"></svg>
+
   </div>
-    <!-- <div id='graph-div'> -->
-    <!-- <svg class="graph"/> -->
-  <!-- </div> -->
+
   <div id = "happy-controls" class="controls">
-    <!-- <div class="controls"></div> -->
+
   </div>
 
 
-<!-- <div id='show-angry' style='display:none'>
-  <p>Saddest Countries</p>
-</div>
-<div id = "sad-graph" style='display:none'>
-    <svg id="graph2" class="graph"></svg>
-</div> -->
+
 
 <div id='show-angry' style='display:none'>
   <p>Saddest Countries</p>
 
-<!-- <div id = "happy-graph" style='display:none'> -->
     <svg id="graph2" class="graph"></svg>
   </div>
-    <!-- <div id='graph-div'> -->
-    <!-- <svg class="graph"/> -->
-  <!-- </div> -->
+
   <div id = "sad-controls" class="controls">
-    <!-- <div class="controls"></div> -->
+
   </div>
+<div class="story">
+  <p style="font-size:30px; color:#fffff; font-weight:bold; text-align:center;">Story Premise
+  <p><i>For the second consecutive year in 2018, the United States has taken a notch down in the World Happiness Report’s annual ranking of more than 150 countries, published by the Sustainable Development Solutions Network.
+It is a general belief that a country with a booming economy and high income should have a high happiness rank.
 
+</div>
 
-
-<!-- <div id='show-normal' style='display:none'>
-  <p>I am fine!</p>
-</div> -->
-
-
-  <!-- <div id='show-happy' style='display:none'>I am happy!</div>
-  <div id='show-normal' style='display:none'>I am fine!</div>
-  <div id='show-angry' style='display:none'>I am sad!</div> -->
-
-  <div class = "bar">
-      <!-- <p><b>Comparison of Rate of change of GDP VS change in Happiness Rank
-          for USA vs Cameron</p> -->
-          <p style="font-size:20px; color:black; font-weight:bold; ">
-    Comparison of Rate of change of GDP and Happiness for
-    <span style="color: #ff0000">Cameroon</span>
-    and
-    <span style="color: #1477B9">USA</span>
-    for years 2015-2017
+  <p style="font-size:30px; color:#fffff; font-weight:bold; text-align:center;">
+  Comparison of Rate of change of GDP and Happiness for
+  <span style="color: #ff0000">Cameroon</span>
+  and
+  <span style="color: #1477B9">USA</span>
+  for years 2015-2017
   </p>
-      <svg id="eco-usa" ></svg>
-      <svg id="eco-cam"></svg>
-      <br><br><br><br><br>
-      
-      <p style="font-size:20px; color:black
-      ; font-weight:bold;">Trends in World Giving (Generosity) Index rank for USA for the years 2014-2017</p>
 
-      <svg id="generous"></svg>
-      <p style="font-size:20px; color:#628AA5; font-weight:bold;">The United States has slipped down the rankings to fifth place,
-              its lowest ranking since 2011. A five percentage point decrease in the USA’s overall score is driven by
-              lower levels of donating money (down seven percentage points to 56%)
-              and volunteering time (down five percentage points to 41%).
-      </p>
+  <div class=" bar11">
+
+<div class="row">
+  <div class="column">
+    <svg id="eco-usa" ></svg>
+  </div>
+  <div class="column">
+    <svg id="eco-cam"></svg>
+  </div>
+  <div class="column">
 
   </div>
+</div>
+<p>We can see in the graphs above that the happiness score for the US for three consecutive years.
+  The score has continuously dropped and so has the rank of the US compared to other countries.Even though the happiness score has taken a dip, over the last 3 years, the GDP for the US has been climbing.
+   Over the last half-century, the GDP of the US has more than tripled.
+   But the same is not true for Cameroon, whose happiness and GDP are increasing hand in hand.
+</p>
+</div>
 
 
+<div class="story">
+  <p style="font-size:30px; color:#fffff; font-weight:bold; text-align:center;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    So what’s causing USA’s happiness to decline?.
 
 
-  <div class="bar2">
-    <p style="font-size:20px; color:black; font-weight:bold; ">
-Trends in Drug abuse Percentage
+  <p style="font-size:20px; color:#107ED2; font-weight:bold;">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+      “rising inequality, corruption, isolation, and distrust."
+
+</div>
+
+<p style="font-size:30px; color:#fffff; font-weight:bold; text-align:center;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Trends in Drug abuse Percentage
 <span style="color: #ff0000">Latin America</span>
 and
 <span style="color: #1477B9">USA</span>
 for years 2014-2016
 </p>
-          <svg id="drugabuse"></svg>
-          <svg id="happiness-rank"></svg>
+
+  <div class="bar112">
+    <div class="row">
+      <div class="column">
+        <svg id="drugabuse"></svg>
+      </div>
+      <div class="column">
+        <svg id="happiness-rank"></svg>
+      </div>
+      <div class="column insights">
+        <p style="font-size:15px; color:#fffff; font-weight:bold; text-align:justify;"> 1. Increase in substance abuse in America is a clear indicator of the collective mental state of Americans. Surveys have shown that American workers are struggling with high levels of stress anxiety and depression and thus lower happiness.</p>
+        <br>
+        <br>
+        <p style="font-size:15px; color:#fffff; font-weight:bold; text-align:justify;"> 2. But are there other factors at play? When you compare Latin America with the USA, the results are surprising.Both these regions have a long and grave drug abuse problem, yet Costa-Rica (a country in Latin America) has a happiness score greater than that of the USA.</p>
+        <br>
+      </div>
+    </div>
+
+    <p>
+      This can be explained by the abundance of family warmth and other supportive social relationships in Latin America. Having someone to count on has a big impact on happiness, and the quality of the community is key to feeling safe. 2017 was a challenging year for Americans’ well-being. The national Well-Being Index score for the U.S. in 2017 was 61.5 – a decline from 62.1 in 2016.
+
+    </p>
+
+      </div>
+      <br>
+      <br>
+      <p style="font-size:30px; color:#fffff; font-weight:bold; text-align:center;">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Trends in World Giving (Generosity) Index rank for USA for the years 2014-2017
+      </p>
+<div class=" bar11">
+
+<div class="row">
+  <div class="column2 insights">
+    <p style="font-size:15px; color:#fffff; font-weight:bold; text-align:justify;"> 1.Generosity is measured by World giving Index. The United States has slipped down the rankings to fifth place, its lowest ranking since 2011. A five percentage point decrease in the USA’s overall score is driven by lower levels of donating money (down seven percentage points to 56%) and volunteering time (down five percentage points to 41%).</p>
+  </div>
+
+  <div class="column2">
+    <svg id="generous"></svg>
+    <br>
+    <br>
+    <!-- <p style="font-size:15px; color:#fffff; font-weight:bold; text-align:justify;"> 2. But are there other factors at play? When you compare Latin America with the USA, the results are surprising.Both these regions have a long and grave drug abuse problem, yet Costa-Rica (a country in Latin America) has a happiness score greater than that of the USA.</p> -->
+    <br>
+  </div>
+</div>
+<p>
+  Happier countries tend to be more generous and think about extending advantages to future generations and other countries. And engaging in some sort of charity and donations makes one feel grateful and is one of the key elements for feeling satisfied and happy.
+</p>
+</div>
+
+
+<br>
+
+
+        <p style="font-size:30px; color:#fffff; font-weight:bold; text-align:center;">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      3. Income inequality in USA for the year 2015
+
+      </p>
+<div class="bar11">
+  <div class="row">
+    <div class="column2">
+      <svg id="income"></svg>
+    </div>
+
+    <div class="column2 insights">
+
+      <p style="font-size:15px; color:#fffff; font-weight:bold; text-align:justify;">
+        <!-- 1. The United States has slipped down the rankings to fifth place, its lowest ranking since 2011. A five percentage point decrease in the USA’s overall score is driven by lower levels of donating money (down seven percentage points to 56%) and volunteering time (down five percentage points to 41%).</p> -->
+        There is huge income inequality in the USA as seen in the graph below.
+    </div>
+  </div>
+    <p>
+      As the incomes of the 1% pull away from those of the rest, people’s overall life satisfaction becomes lower and their day-to-day negative emotional experiences are greater in number. This can be explained by a simple reason that even if you are a member of the relatively well-to-do middle class, some things start getting priced beyond your reach, such as private schools and houses in the best neighborhoods.
+</p>
+<br>
+<br>
+  </div>
+  <p style="font-size:30px; color:#fffff; font-weight:bold; text-align:center;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  4. Trends in Corruption Perception Index
+
+  </p>
+
+  <div class="bar11">
+    <div class="row">
+      <div class="column2">
+        <svg id="corruption"></svg>
       </div>
 
+      <div class="column2 insights">
 
-  <!-- <div class = "bar">
-      <p>Trends in World Giving (Generosity) Index rank for USA for the years 2014-2017</p>
+        <p style="font-size:15px; color:#fffff; font-weight:bold; text-align:justify;">
+          <!-- 1. The United States has slipped down the rankings to fifth place, its lowest ranking since 2011. A five percentage point decrease in the USA’s overall score is driven by lower levels of donating money (down seven percentage points to 56%) and volunteering time (down five percentage points to 41%).</p> -->
+          Nearly six in ten people now say that the level of corruption has risen in the past twelve months, up from around a third who said the same in January 2015.
 
-      <svg id="generous"></svg>
-      <p>The United States has slipped down the rankings to fifth place,
-              its lowest ranking since 2011. A five percentage point decrease in the USA’s overall score is driven by
-              lower levels of donating money (down seven percentage points to 56%)
-              and volunteering time (down five percentage points to 41%).
-      </p>
+      </div>
+    </div>
+    <p>
+      Corruption is measured by The Corruption Perceptions Index (CPI) published annually by Transparency International since 1995 which ranks countries "on a scale from 100 (very clean) to 0 (highly corrupt)". Corrupt nations tend to have low levels of happiness and life satisfaction. More and more people are losing their trust int he government bodies due to corruption which in turn making them unhappy.
 
-</div> -->
+    </p>
+  </div>
+
+  <br>
+  <p style="font-size:40px; color:red; font-weight:bold; text-align:center;">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;
+
+  Conclusion
+  <br>
+
+  </p>
+        <p>
+          As seen from the graphs above, to make America happier again, we need to come up with policies that target social factors like curbing corruption, effective drug control, improving social support system and bridging the huge income gap between the riches and the poor. Simply focusing on increasing the wealth and economy won’t help, it’s the proper distribution of the wealth that can make Americans believe that the government is working for them rather than just for the rich.
+</p>
+
+
+
+
+
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 

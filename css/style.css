@@ -26,6 +26,7 @@ h1{
   color: #fff;
   padding: 0 20px;
   display:inline-block;
+  font-weight:bold
 }
 
 p{
@@ -141,7 +142,7 @@ label
   border-top-right-radius: 100px;
   border-bottom-left-radius: 100px;
   border-bottom-right-radius: 100px;
-  height: 10%;
+  height: 30%;
   width: 40%;
   bottom: 25%;
   margin-left: -20%;
@@ -438,7 +439,7 @@ p{
 .innerbox {
 	overflow: hidden;
 	width: 90%;
-	height: 60%;
+	height: 61%;
 	margin: 1%;
 	background: lightblue;
 	display: inline-block;
@@ -513,7 +514,7 @@ p{
         }
 #show-happy{
         overflow: hidden;
-      	width: 102%;
+      	width: 98%;
       	height: 68%;
       	margin: 1%;
       	background: white;
@@ -521,7 +522,7 @@ p{
 
  #show-angry{
         overflow: hidden;
-      	width: 102%;
+      	width: 98%;
       	height: 68%;
       	margin: 1%;
       	background: white;
@@ -551,7 +552,7 @@ display: inline-block;
   }
 
   .grid line {
-    stroke: lightgrey;
+    stroke: darkgrey;
     stroke-opacity: 0.7;
     shape-rendering: crispEdges;
   }
@@ -560,21 +561,61 @@ display: inline-block;
     stroke-width: 0;
   }
 
-  .bar{
-      width: 80%;
-      height: 116%;
-      margin: 10%;
-      background: white;
+  .bar11{
+      width: 95%;
+      height: 58%;
+      margin-top: 8%;
+      margin-left: 4%;
+      background: lightblue;
       position: relative;
   }
-  .bar2{
-      width: 80%;
-      height: 56%;
-      margin: 10%;
-      background: white;
+  .bar112{
+      width: 95%;
+      height: 58%;
+      margin-top: 6%;
+      margin-left: 4%;
+      background: lightblue;
       position: relative;
   }
 
+  .bar { fill: steelblue; }
+
+  .insights{
+      background: #FEDAE5;
+      position: sticky;
+      height: 30%;
+      /* border-style: dotted; */
+      box-shadow: 10px 10px 5px #888;
+  }
+  .insights2{
+      background: #FEDAE5;
+      position: sticky;
+      height: 30%;
+      /* border-style: dotted; */
+      box-shadow: 10px 10px 5px #888;
+  }
+
+  .story{
+    height: 20%;
+    width: 95%;
+  }
+  /* * {
+    box-sizing: border-box;
+  } */
+
+  .row {
+    display: flex;
+  }
+
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  .column2 {
+    flex: 50;
+    padding: 5px;
+  }
 
 /* .bar:hover {
     transform: scale(1.2);
@@ -596,3 +637,12 @@ display: inline-block;
 .legend .dot_yellow { background-color: #a05d56; }
 .legend .dot_brown { background-color: #d0743c; }
 .legend .dot_maroon { background-color: #ff8c00; }
+
+
+.img {
+  float: relative;
+}
+
+.clearfix {
+  overflow: auto;
+}
